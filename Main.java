@@ -1,4 +1,4 @@
-class Untitled {
+class Main {
 	public static void main(String[] args) {
 		
 	}
@@ -35,9 +35,12 @@ class MyArrayList
          newList[list.length + 1] = x;  
       }
    }
-   public void addMiddle()
+	
+	
+   public void addMiddle(int x)
    {
-      
+		//make a new array 1 larger than the previous array
+		int[] newList = new int[list.length + 1];
    }
    public void addBeginning(int x)
    {
