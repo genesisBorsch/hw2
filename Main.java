@@ -1,36 +1,30 @@
-/**
- *This is something
- *@author some person
- *@version 0.0.1
- */
-class Main{
-   public  void main(){
-      System.out.println("IT WORKS!");
-      MyArrayList arrayTEST = new MyArrayList();
-      arrayTEST.addEnd(1);
-   }
+class Untitled {
+	public static void main(String[] args) {
+		
+	}
 }
+
 
 class MyArrayList
 {
    private int[] list;
-   /**
-    * This is the constructor for the My array 
-    * @param var message
-    */
+
    public MyArrayList()
    {
       
    }
-   /**
-    * This adds an int to the end of the array.
-    * @param x This is an integer you would like to add to an array
-    */
+
    public void addEnd(int x)
-   { 
-      int[list.length+1] newList;
-      if(list.length==0){list[0] = x; System.out.println("YSYA");}
-          
+   {
+		//make a new array 1 larger than the previous array
+      int[] newList = new int[list.length + 1];
+		
+		//if the length is 0 that means there is nothing in the array
+      if(list.length==0){
+			//Put the arg in the first position
+			list[0] = x;
+		}
+      //There is something in the array
       else
       {
          for(int i = 0; i<= list.length; i++)
@@ -45,7 +39,7 @@ class MyArrayList
    }
    public void addBeginning(int x)
    {
-      int[] newList;
+      int[] newList = new int[list.length + 1];
       if(list.length == 0)
          list[0] = x;
       else
