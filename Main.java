@@ -26,10 +26,12 @@ class MyArrayList
 		}
       //There is something in the array
       else
-      {
-         for(int i = 0; i<= list.length; i++)
+      {	
+			//Coppy the old array to the new array
+         for(int i = 0; i<= list.length; i++){
             newList[i] = list[i];
-            
+			}
+			//add the arg to the end of the list
          newList[list.length + 1] = x;  
       }
    }
